@@ -1,4 +1,4 @@
-package com.genieworks.taxigo;
+package xyz.genieworks.taxigo;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

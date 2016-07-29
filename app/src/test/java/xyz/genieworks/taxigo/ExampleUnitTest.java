@@ -1,4 +1,4 @@
-package com.genieworks.taxigo;
+package xyz.genieworks.taxigo;
 
 import org.junit.Test;
 
