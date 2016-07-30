@@ -1,0 +1,50 @@
+{
+  "project_info": {
+    "project_number": "467987116820",
+    "firebase_url": "https://taxi-go-a1d88.firebaseio.com",
+    "project_id": "taxi-go-a1d88",
+    "storage_bucket": "taxi-go-a1d88.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467987116820:android:e6235ed4a6da8d19",
+        "android_client_info": {
+          "package_name": "xyz.genieworks.taxigo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "467987116820-naj3tt2689hb0c9a3kpbfvjpd22sntsm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "xyz.genieworks.taxigo",
+            "certificate_hash": "40320D224E4201F6C6FA77F80F372001BDEAF2D0"
+          }
+        },
+        {
+          "client_id": "467987116820-sfv9e68okbov33cjc1p3bnv8au34phvp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBo-8NcdnXja3ZxdHAaPzAWaTJUIFtjDck"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
