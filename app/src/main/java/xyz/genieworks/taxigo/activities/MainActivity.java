@@ -1,5 +1,6 @@
 package xyz.genieworks.taxigo.activities;
 
+import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -10,6 +11,8 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import xyz.genieworks.taxigo.R;
 
@@ -22,12 +25,21 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //if user not Authenticated with Firebase go to LoginActivity
+        if(!isUserAuthenticated()){
+            Intent loginActivityIntent = new Intent(MainActivity.this, LoginActivity.class );
+            MainActivity.this.startActivity(loginActivityIntent);
+        }
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
     }
 
+    private boolean isUserAuthenticated(){
+        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+        return currentUser != null;
+    }
 
     /**
      * Manipulates the map once available.
