@@ -77,7 +77,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
 
            @Override
            public void onError(FacebookException error) {
-               Log.e(TAG, "Facebool login failed error:" + error.toString());
+               Log.e(TAG, "Facebook login failed error:" + error.toString());
            }
        });
     }
@@ -143,7 +143,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                 GoogleSignInAccount account = result.getSignInAccount();
                 fireBaseAuthWithGoogle(account);
             } else {
-                Toast.makeText(LoginActivity.this, "Google Signing in failed, please try again ", Toast.LENGTH_SHORT).show();
+                Log.d(TAG,"Google signing failed result: "+result.getStatus().toString());
             }
         }
         //Facebook login
