@@ -31,5 +31,10 @@ dependencies {
     compile 'com.google.android.gms:play-services:9.2.1'
     compile 'com.facebook.android:facebook-android-sdk:4.9.0'
     compile 'com.android.support:multidex:1.0.0'
+    compile('com.mikepenz:materialdrawer:5.3.6@aar') {
+        transitive = true
+    }
+    compile 'com.mikepenz:google-material-typeface:2.2.0.2.original@aar'
+    compile 'com.mikepenz:material-design-iconic-typeface:2.2.0.2@aar'
 }
 apply plugin: 'com.google.gms.google-services'

@@ -4,4 +4,5 @@
     <string name="title_activity_login">Sign in</string>
     <string name="server_client_id">467987116820-sfv9e68okbov33cjc1p3bnv8au34phvp.apps.googleusercontent.com</string>
     <string name="facebook_app_id">275557296149371</string>
+    <string name="title_activity_test">TestActivity</string>
 </resources>

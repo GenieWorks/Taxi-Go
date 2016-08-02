@@ -1,5 +1,6 @@
 package xyz.genieworks.taxigo.activities;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
